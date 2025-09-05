@@ -1,0 +1,17 @@
+{
+  "extends": "@react-skeleton/config-typescript/react-library.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "lib": ["dom", "ES2015"],
+    "sourceMap": true,
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    /* Path aliasing */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["dist", "build", "node_modules"]
+}
