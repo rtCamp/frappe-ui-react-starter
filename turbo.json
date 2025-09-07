@@ -11,6 +11,13 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "build": {
+      "dependsOn": ["check-types","^build"],
+      "outputs": ["dist/**"]
     }
   }
 }
