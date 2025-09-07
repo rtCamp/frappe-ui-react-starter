@@ -11,6 +11,7 @@
     "preinstall": "npx only-allow pnpm",
     "lint": "turbo run lint",
     "format": "turbo run format",
+    "dev": "turbo run dev"
   },
   "devDependencies": {
     "turbo": "^2.5.6"
