@@ -7,9 +7,9 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
       turbo:
-        specifier: ^2.5.0
+        specifier: ^2.5.6
         version: 2.5.6
 
   apps/web:
@@ -192,6 +192,9 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1
     devDependencies:
+      '@react-skeleton/config-eslint':
+        specifier: workspace:*
+        version: link:../config-eslint
       '@react-skeleton/config-prettier':
         specifier: workspace:*
         version: link:../config-prettier
