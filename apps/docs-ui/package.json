@@ -1,20 +1,16 @@
 {
-	"name": "@react-skeleton/web",
+	"name": "docs-ui",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite",
-		"build": "tsc -b && vite build",
-		"check-types": "tsc -b -noEmit",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix",
-		"format": "prettier . --write",
-		"preview": "vite preview"
+		"storybook": "storybook dev -p 6006",
+		"build": "storybook build"
 	},
 	"dependencies": {
 		"@react-skeleton/ui": "workspace:*",
 		"@tailwindcss/vite": "^4.1.12",
+		"lucide-react": "^0.542.0",
 		"react": "^19.1.1",
 		"react-dom": "^19.1.1"
 	},
