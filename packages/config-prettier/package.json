@@ -1,6 +1,7 @@
 {
 	"name": "@react-skeleton/config-prettier",
 	"version": "0.0.0",
+    "type": "module",
 	"files": [
 		"./index.js"
 	],
@@ -10,6 +11,6 @@
 		"@wordpress/prettier-config": "^4.6.0"
 	},
 	"peerDependencies": {
-		"prettier": "npm:wp-prettier@^3.0.3"
+		"prettier": ">=3"
 	}
 }
