@@ -32,6 +32,7 @@
 		"react": "^19"
 	},
 	"devDependencies": {
+		"@react-skeleton/config-eslint": "workspace:*",
 		"@react-skeleton/config-prettier": "workspace:*",
 		"@react-skeleton/config-tailwind": "workspace:*",
 		"@react-skeleton/config-typescript": "workspace:*",
