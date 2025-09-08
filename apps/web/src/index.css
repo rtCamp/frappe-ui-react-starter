@@ -1,0 +1,4 @@
+@import "@react-skeleton/config-tailwind";
+@import "@react-skeleton/ui/styles.css";
+
+@source "../../../packages/ui";
