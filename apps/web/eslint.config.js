@@ -6,7 +6,7 @@ import storybook from 'eslint-plugin-storybook';
  */
 import { config as baseConfig } from '@react-skeleton/config-eslint';
 import tseslint from 'typescript-eslint';
-import reactRefresh from "eslint-plugin-react-refresh";
+import reactRefresh from 'eslint-plugin-react-refresh';
 import { globalIgnores } from 'eslint/config';
 
 /**
@@ -18,9 +18,7 @@ export default tseslint.config(
 		globalIgnores(['dist']),
 		{
 			files: ['**/*.{ts,tsx}'],
-			extends: [
-				reactRefresh.configs.vite, // ✅ keep react-refresh for fast refresh
-			],
+			extends: [reactRefresh.configs.vite],
 		},
 	],
 	storybook.configs['flat/recommended']
