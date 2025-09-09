@@ -1,5 +1,5 @@
 {
-  "extends": "@react-skeleton/config-typescript/react-library.json",
+	"extends": "@react-skeleton/config-typescript/react-library.json",
 	"compilerOptions": {
 		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 
