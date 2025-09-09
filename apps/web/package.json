@@ -23,7 +23,7 @@
 		"@eslint/js": "^9.33.0",
 		"@react-skeleton/config-prettier": "workspace:*",
 		"@react-skeleton/config-tailwind": "workspace:*",
-    "@react-skeleton/config-eslint": "workspace:*",
+		"@react-skeleton/config-eslint": "workspace:*",
 		"@storybook/addon-a11y": "^9.1.3",
 		"@storybook/addon-docs": "^9.1.3",
 		"@storybook/addon-onboarding": "^9.1.3",
