@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test( 'increments counter button', async ({ page }) => {
+test('increments counter button', async ({ page }) => {
 	// Go to app
 	await page.goto('/');
 
