@@ -33,6 +33,14 @@
     "test": {
       "dependsOn": ["^test"],
       "outputs": []
+    },
+    "test:e2e": {
+      "dependsOn": ["^test:e2e"],
+      "outputs": []
+    },
+    "test:e2e-ui": {
+      "dependsOn": ["^test:e2e-ui"],
+      "outputs": []
     }
   }
 }

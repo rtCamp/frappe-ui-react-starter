@@ -28,3 +28,7 @@ storybook-static
 
 .turbo
 coverage/
+
+playwright-report/
+trace/
+test-results/
