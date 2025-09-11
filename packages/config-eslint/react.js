@@ -4,6 +4,7 @@ import tseslint from "typescript-eslint";
 import pluginReactHooks from "eslint-plugin-react-hooks";
 import pluginReact from "eslint-plugin-react";
 import globals from "globals";
+import pluginJsxA11y from "eslint-plugin-jsx-a11y";
 import { config as baseConfig } from "./index.js";
 
 /**
@@ -16,6 +17,7 @@ export const config = [
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  pluginJsxA11y.flatConfigs.recommended,
   {
     languageOptions: {
       ...pluginReact.configs.flat.recommended.languageOptions,

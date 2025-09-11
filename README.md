@@ -1,4 +1,4 @@
-                                        # React + TypeScript + Vite.
+# React + TypeScript + Vite.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -25,10 +25,10 @@ This template provides a minimal setup to get React working in Vite with HMR and
 - *Storybook:* To start storybook, run `pnpm run storybook`.
 - *Linting:* To lint, run `pnpm run lint`.
 
-| Application | Command              | URL                    |
-|-------------|----------------------|------------------------|
-| Development | `pnpm run dev`       | http://localhost:5174/ |
-| Storybook   | `pnpm run storybook` | http://localhost:5173/ |
+| Application | Command              | URL                      |
+|-------------|----------------------|--------------------------|
+| Development | `pnpm run dev`       | http://localhost:5174/   |
+| Storybook   | `pnpm run storybook` | http://localhost:6006/   |
 
 # Components/UI package.
 - The components live in `packages/ui/src/components` directory.
