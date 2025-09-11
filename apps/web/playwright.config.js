@@ -1,11 +1,11 @@
-import baseConfig from "@react-skeleton/config-playwright";
-import { defineConfig } from "@playwright/test";
+import baseConfig from '@react-skeleton/config-playwright';
+import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
 	...baseConfig,
-	testDir: "./src/e2e",   // web-specific location
+	testDir: './src/e2e', // web-specific location
 	use: {
 		...baseConfig.use,
-		baseURL: "http://localhost:5174", // override if needed
+		baseURL: 'http://localhost:5174', // override if needed
 	},
 });

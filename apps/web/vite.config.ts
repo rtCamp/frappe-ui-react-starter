@@ -10,7 +10,7 @@ import path from 'path';
 export default defineConfig({
 	plugins: [react(), tailwindcss()],
 	server: {
-		port: 5174,     // Force dev server to always use 5174.
+		port: 5174, // Force dev server to always use 5174.
 		strictPort: true, // Fail if 5173 is already taken.
 	},
 	resolve: {
