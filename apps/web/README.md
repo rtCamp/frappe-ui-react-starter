@@ -87,5 +87,5 @@ Here is how you can use the environment variables in your application.
 
 ```javascript
 const apiUrl = import.meta.env.VITE_API_URL;
-console.log("API URL:", apiUrl);
+console.log('API URL:', apiUrl);
 ```
