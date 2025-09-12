@@ -67,3 +67,17 @@ export default tseslint.config([
 	},
 ]);
 ```
+
+## Environment-specific files
+
+Vite automatically loads env files depending on the command:
+
+- .env → loaded in all cases
+
+- .env.local → local overrides (gitignored, not shared)
+
+- .env.development → when running pnpm dev
+
+- .env.production → when running vite build or vite preview
+  
+- *Order of priority*: .env.local overrides .env.production which overrides .env.

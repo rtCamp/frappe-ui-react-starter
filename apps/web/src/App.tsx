@@ -3,9 +3,11 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import { Button } from '@react-skeleton/ui/button';
 
+const apiUrl: string = import.meta.env.VITE_API_URL;
+
 function App() {
 	const [count, setCount] = useState(0);
-
+	console.log("API URL:", apiUrl, import.meta);
 	return (
 		<main className="max-w-7xl m-auto min-h-screen flex flex-col items-center justify-center gap-5">
 			<div className="flex gap-5">

@@ -19,6 +19,11 @@
       "dependsOn": ["check-types", "^build"],
       "outputs": ["dist/**"]
     },
+    "preview": {
+      "dependsOn": ["check-types", "^build"],
+      "persistent": true,
+      "cache": false
+    },
     "preview-storybook": {
       "dependsOn": ["@react-skeleton/ui#build","docs-ui#build"],
       "outputs": [".storybook-static/**"],
