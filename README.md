@@ -25,10 +25,11 @@ This template provides a minimal setup to get React working in Vite with HMR and
 - *Storybook:* To start storybook, run `pnpm run storybook`.
 - *Linting:* To lint, run `pnpm run lint`.
 
-| Application | Command              | URL                      |
-|-------------|----------------------|--------------------------|
-| Development | `pnpm run dev`       | http://localhost:5174/   |
-| Storybook   | `pnpm run storybook` | http://localhost:6006/   |
+| Application | Command              | URL                    |
+|-------------|----------------------|------------------------|
+| Development | `pnpm run dev`       | http://localhost:5174/ |
+| Production  | `pnpm run serve`     | http://localhost:5175/ |
+| Storybook   | `pnpm run storybook` | http://localhost:5173/ |
 
 # Components/UI package.
 - The components live in `packages/ui/src/components` directory.

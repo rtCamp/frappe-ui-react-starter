@@ -67,3 +67,25 @@ export default tseslint.config([
 	},
 ]);
 ```
+
+## Environment-specific files
+
+Vite automatically loads env files depending on the command:
+
+- .env → loaded in all cases
+
+- .env.local → local overrides (gitignored, not shared)
+
+- .env.development → when running pnpm dev
+
+- .env.production → when running vite build or vite preview
+- _Order of priority_: .env.local overrides .env.production which overrides .env.
+
+## Using environment variables.
+
+Here is how you can use the environment variables in your application.
+
+```javascript
+const apiUrl = import.meta.env.VITE_API_URL;
+console.log('API URL:', apiUrl);
+```
