@@ -1,28 +1,28 @@
-import * as React from "react";
-import * as TabsPrimitive from "@radix-ui/react-tabs";
-import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "../../lib/utils";
+import * as React from 'react';
+import * as TabsPrimitive from '@radix-ui/react-tabs';
+import { cva, type VariantProps } from 'class-variance-authority';
+import { cn } from '../../lib/utils';
 
 const tabsTriggerVariants = cva(
-	"inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all",
+	'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all',
 	{
 		variants: {
 			variant: {
 				default:
-					"text-muted-foreground hover:text-foreground cursor-pointer " +
-					"hover:bg-accent focus-visible:outline-none focus-visible:ring-2 " +
-					"focus-visible:ring-ring focus-visible:ring-offset-2 " +
-					"data-[state=active]:bg-background data-[state=active]:text-foreground " +
-					"data-[state=active]:shadow-sm",
+					'text-muted-foreground hover:text-foreground cursor-pointer ' +
+					'hover:bg-accent focus-visible:outline-none focus-visible:ring-2 ' +
+					'focus-visible:ring-ring focus-visible:ring-offset-2 ' +
+					'data-[state=active]:bg-background data-[state=active]:text-foreground ' +
+					'data-[state=active]:shadow-sm',
 				ghost:
-					"text-muted-foreground hover:text-foreground cursor-pointer " +
-					"hover:bg-transparent focus-visible:outline-none focus-visible:ring-2 " +
-					"focus-visible:ring-ring focus-visible:ring-offset-2 " +
-					"data-[state=active]:text-foreground data-[state=active]:underline",
+					'text-muted-foreground hover:text-foreground cursor-pointer ' +
+					'hover:bg-transparent focus-visible:outline-none focus-visible:ring-2 ' +
+					'focus-visible:ring-ring focus-visible:ring-offset-2 ' +
+					'data-[state=active]:text-foreground data-[state=active]:underline',
 			},
 		},
 		defaultVariants: {
-			variant: "default",
+			variant: 'default',
 		},
 	}
 );
@@ -34,7 +34,10 @@ const TabsList = React.forwardRef<
 >(({ className, ...props }, ref) => (
 	<TabsPrimitive.List
 		ref={ref}
-		className={cn("inline-flex h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground", className)}
+		className={cn(
+			'inline-flex h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground',
+			className
+		)}
 		{...props}
 	/>
 ));
@@ -43,7 +46,7 @@ TabsList.displayName = TabsPrimitive.List.displayName;
 const TabsTrigger = React.forwardRef<
 	React.ComponentRef<typeof TabsPrimitive.Trigger>,
 	React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger> &
-	VariantProps<typeof tabsTriggerVariants>
+		VariantProps<typeof tabsTriggerVariants>
 >(({ className, variant, ...props }, ref) => (
 	<TabsPrimitive.Trigger
 		ref={ref}
@@ -59,7 +62,10 @@ const TabsContent = React.forwardRef<
 >(({ className, ...props }, ref) => (
 	<TabsPrimitive.Content
 		ref={ref}
-		className={cn("mt-2 rounded-md border border-input bg-background p-4", className)}
+		className={cn(
+			'mt-2 rounded-md border border-input bg-background p-4',
+			className
+		)}
 		{...props}
 	/>
 ));

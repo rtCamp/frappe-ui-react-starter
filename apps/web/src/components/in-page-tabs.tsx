@@ -3,7 +3,7 @@ import {
 	TabsList,
 	TabsTrigger,
 	TabsContent,
-} from "@react-skeleton/ui/tabs";
+} from '@react-skeleton/ui/tabs';
 
 export default function InPageTabs() {
 	return (
