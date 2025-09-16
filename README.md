@@ -1,4 +1,4 @@
-# React + TypeScript + Vite.
+# # React Skeleton
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -45,14 +45,5 @@ import { Button } from '@react-skeleton/ui/button';
 - Configuration packages like `apps/config-eslint`, `apps/config-prettier` can be imported from packages.
 - Example, you can import a `config-prettier` config inside the `apps/web/prettierrc.js` like so:
   `import defaultConfig from '@react-skeleton/config-prettier';`
-
-### Default Branch
-
-`main`
-
-### Branch naming convention
-
-- For feature - `feature/issue-name` For example, `feature/add-plugin`
-- For bug - `fix/issue-name` For example, `fix/phpcs-errors`
 
 <a href="https://rtcamp.com/"><img src="https://rtcamp.com/wp-content/uploads/sites/2/2019/04/github-banner@2x.png" alt="Join us at rtCamp, we specialize in providing high performance enterprise WordPress solutions"></a>
