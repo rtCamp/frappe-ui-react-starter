@@ -1,5 +1,5 @@
 {
-	"name": "docs-ui",
+	"name": "docs-design-system",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -8,7 +8,7 @@
 		"build": "storybook build"
 	},
 	"dependencies": {
-		"@react-skeleton/ui": "workspace:*",
+		"@react-skeleton/design-system": "workspace:*",
 		"@tailwindcss/vite": "^4.1.12",
 		"lucide-react": "^0.542.0",
 		"react": "^19.1.1",

@@ -13,10 +13,10 @@
 		"format": "prettier . --write",
 		"test": "jest",
 		"test:e2e": "playwright test",
-		"test:e2e-ui": "playwright test --ui"
+		"test:e2e-design-system": "playwright test --design-system"
 	},
 	"dependencies": {
-		"@react-skeleton/ui": "workspace:*",
+		"@react-skeleton/design-system": "workspace:*",
 		"@tailwindcss/vite": "^4.1.12",
 		"react": "^19.1.1",
 		"react-dom": "^19.1.1"

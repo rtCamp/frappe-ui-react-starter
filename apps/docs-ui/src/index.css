@@ -1,4 +1,4 @@
 @import "@react-skeleton/config-tailwind";
-@import "@react-skeleton/ui/styles.css";
+@import "@react-skeleton/design-system/styles.css";
 
-@source "../../../packages/ui";
+@source "../../../packages/design-system";

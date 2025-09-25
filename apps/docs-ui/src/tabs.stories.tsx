@@ -5,7 +5,7 @@ import {
 	TabsList,
 	TabsTrigger,
 	TabsContent,
-} from "@react-skeleton/ui/tabs";
+} from "@react-skeleton/design-system/tabs";
 
 /**
  * A set of layered sections that allow navigation between different views.
