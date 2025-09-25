@@ -13,7 +13,7 @@
 		"format": "prettier . --write",
 		"test": "jest",
 		"test:e2e": "playwright test",
-		"test:e2e-design-system": "playwright test --design-system"
+		"test:e2e-ui": "playwright test --ui"
 	},
 	"dependencies": {
 		"@react-skeleton/design-system": "workspace:*",
