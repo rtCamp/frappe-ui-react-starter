@@ -39,7 +39,8 @@
 		"tailwind-merge": "^3.3.1"
 	},
 	"peerDependencies": {
-		"react": "^19"
+		"react": "^19",
+    "lucide-react": "^0.379.0"
 	},
 	"devDependencies": {
 		"@react-skeleton/config-eslint": "workspace:*",

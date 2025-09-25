@@ -29,7 +29,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 |-------------|----------------------|------------------------|
 | Development | `pnpm run dev`       | http://localhost:5174/ |
 | Production  | `pnpm run serve`     | http://localhost:5175/ |
-| Storybook   | `pnpm run storybook` | http://localhost:5173/ |
+| Storybook   | `pnpm run storybook` | http://localhost:6006/ |
 
 # Components/UI package.
 - The components live in `packages/design-system/src/components` directory.
