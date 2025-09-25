@@ -1,7 +1,7 @@
 import { useState } from 'react';
-// import reactLogo from './assets/react.svg';
-// import viteLogo from '/vite.svg';
-// import { Button } from '@react-skeleton/design-system/button';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import { Button } from '@react-skeleton/design-system/button';
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -9,20 +9,20 @@ function App() {
 	return (
 		<main className="max-w-7xl m-auto min-h-screen flex flex-col items-center justify-center gap-5">
 			<div className="flex gap-5">
-				{/*<Button variant="link" size="icon">*/}
-				{/*	<a href="https://vite.dev" target="_blank">*/}
-				{/*		<img src={viteLogo} className="logo" alt="Vite logo" />*/}
-				{/*	</a>*/}
-				{/*</Button>*/}
-				{/*<Button variant="link" size="icon">*/}
-				{/*	<a href="https://react.dev" target="_blank">*/}
-				{/*		<img*/}
-				{/*			src={reactLogo}*/}
-				{/*			className="logo react"*/}
-				{/*			alt="React logo"*/}
-				{/*		/>*/}
-				{/*	</a>*/}
-				{/*</Button>*/}
+				<Button variant="link" size="icon">
+					<a href="https://vite.dev" target="_blank">
+						<img src={viteLogo} className="logo" alt="Vite logo" />
+					</a>
+				</Button>
+				<Button variant="link" size="icon">
+					<a href="https://react.dev" target="_blank">
+						<img
+							src={reactLogo}
+							className="logo react"
+							alt="React logo"
+						/>
+					</a>
+				</Button>
 			</div>
 			<h1 className="text-2xl">Vite + React</h1>
 			<div className="flex flex-col items-center justify-center">

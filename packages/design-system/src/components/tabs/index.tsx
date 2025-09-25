@@ -48,7 +48,7 @@ const tabsTriggerVariants = cva(
  *
  * Container for the tabs.
  */
-const Index = TabsPrimitive.Root;
+const Tabs = TabsPrimitive.Root;
 
 /**
  * Tabs List.
@@ -117,4 +117,4 @@ const TabsContent = React.forwardRef<
 ));
 TabsContent.displayName = TabsPrimitive.Content.displayName;
 
-export { Index, TabsList, TabsTrigger, TabsContent };
+export { Tabs, TabsList, TabsTrigger, TabsContent };

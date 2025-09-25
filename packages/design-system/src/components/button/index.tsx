@@ -34,7 +34,7 @@ const buttonVariants = cva(
 	}
 );
 
-function Index( {
+function Button( {
 	className,
 	variant,
 	size,
@@ -55,4 +55,4 @@ function Index( {
 	);
 }
 
-export { Index };
+export { Button };
