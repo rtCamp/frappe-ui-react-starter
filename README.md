@@ -22,14 +22,14 @@ This template provides a minimal setup to get React working in Vite with HMR and
 - *Specific app development:*" To start development environment for only a specific app, run `pnpm --filter <package-name> dev`.
   So to start the development environment for apps/web, run `pnpm --filter web dev`.
 
-- *Storybook:* To start storybook, run `pnpm run storybook`.
-- *Linting:* To lint, run `pnpm run lint`.
+- *Storybook:* To start storybook, run `pnpm storybook`.
+- *Linting:* To lint, run `pnpm lint`.
 
-| Application | Command              | URL                    |
-|-------------|----------------------|------------------------|
-| Development | `pnpm run dev`       | http://localhost:5174/ |
-| Production  | `pnpm run serve`     | http://localhost:5175/ |
-| Storybook   | `pnpm run storybook` | http://localhost:6006/ |
+| Application | Command                     | URL                   |
+|-------------|-----------------------------|-----------------------|
+| Development | `pnpm dev`                  | http://localhost:5174/|
+| Production  | `pnpm build && pnpm serve`  | http://localhost:5175/|
+| Storybook   | `pnpm storybook`            | http://localhost:6006/|
 
 # Components/UI package.
 - The components live in `packages/design-system/src/components` directory.
