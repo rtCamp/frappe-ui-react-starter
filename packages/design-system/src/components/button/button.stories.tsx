@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react-vite'
+import type { Meta, StoryObj } from '@storybook/addon-docs/blocks';
 
-import { Button } from '@react-skeleton/ui/button'
+import { Button } from '@react-skeleton/design-system/button'
 import { Loader2, Mail } from 'lucide-react'
 
 /**

@@ -9,20 +9,17 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "lint": "turbo run lint",
-    "format": "turbo run format",
-    "dev": "turbo run dev",
-    "check-types": "turbo run check-types",
-    "build": "turbo run build --mode production",
-    "serve": "turbo run preview",
-    "preview-storybook": "turbo run preview-storybook",
-    "storybook": "turbo run storybook",
-    "test": "turbo run test",
-    "test:e2e": "turbo run test:e2e",
-    "test:e2e-ui": "turbo run test:e2e-ui"
-  },
-  "devDependencies": {
-    "turbo": "^2.5.6"
+    "lint": "pnpm --filter web lint",
+    "format": "pnpm --filter web format",
+    "dev": "pnpm --filter web dev",
+    "check-types": "pnpm --filter web check-types",
+    "build": "pnpm --filter web build",
+    "serve": "pnpm --filter web preview",
+    "preview-storybook": "pnpm --filter docs-design-system preview-storybook",
+    "storybook": "pnpm --filter docs-design-system storybook",
+    "test": "pnpm --filter web test",
+    "test:e2e": "pnpm --filter web test:e2e",
+    "test:e2e-ui": "pnpm --filter web test:e2e-ui"
   },
   "workspaces": [
     "apps/*",

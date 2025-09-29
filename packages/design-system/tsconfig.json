@@ -12,6 +12,6 @@
 			"@/*": ["./src/*"]
 		}
 	},
-	"include": ["src"],
+	"include": ["src", "storybook.d.ts"],
 	"exclude": ["dist", "build", "node_modules"]
 }

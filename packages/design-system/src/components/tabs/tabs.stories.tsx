@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
+import type { Meta, StoryObj } from '@storybook/addon-docs/blocks';
 
 import {
 	Tabs,
 	TabsList,
 	TabsTrigger,
 	TabsContent,
-} from "@react-skeleton/ui/tabs";
+} from "../tabs";
 
 /**
  * A set of layered sections that allow navigation between different views.

@@ -1,5 +1,5 @@
 {
-	"name": "@react-skeleton/ui",
+	"name": "@react-skeleton/design-system",
 	"version": "0.0.0",
 	"private": true,
 	"type": "module",
@@ -9,10 +9,17 @@
 	"files": [
 		"dist"
 	],
-	"exports": {
-		"./styles.css": "./dist/index.css",
-		"./*": "./dist/components/ui/*.js"
-	},
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
+    },
+    "./styles.css": "./src/styles.css",
+    "./*": {
+      "import": "./src/components/*/index.tsx",
+      "require": "./src/components/*/index.tsx"
+    }
+  },
 	"scripts": {
 		"build:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
 		"build:components": "tsc",
@@ -32,7 +39,8 @@
 		"tailwind-merge": "^3.3.1"
 	},
 	"peerDependencies": {
-		"react": "^19"
+		"react": "^19",
+    "lucide-react": "^0.379.0"
 	},
 	"devDependencies": {
 		"@react-skeleton/config-eslint": "workspace:*",
