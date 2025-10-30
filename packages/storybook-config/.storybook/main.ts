@@ -5,7 +5,7 @@ import path from 'path'
 const config: StorybookConfig = {
     stories: [
 	    // Look for stories inside design-system components
-	    '../../../packages/design-system/src/components/**/*.stories.@(js|jsx|ts|tsx)',
+	    '../../design-system/src/components/**/*.stories.@(js|jsx|ts|tsx)',
     ],
     addons: [
         '@chromatic-com/storybook',
@@ -22,7 +22,7 @@ const config: StorybookConfig = {
         return mergeConfig(config, {
             resolve: {
                 alias: {
-                    '@react-skeleton/design-system': path.resolve(__dirname, '../../../packages/design-system/src'),
+                    '@react-skeleton/design-system': path.resolve(__dirname, '../../design-system/src'),
                 },
             },
         })

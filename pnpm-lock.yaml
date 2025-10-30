@@ -8,112 +8,6 @@ importers:
 
   .: {}
 
-  apps/docs-design-system:
-    dependencies:
-      '@react-skeleton/design-system':
-        specifier: workspace:*
-        version: link:../../packages/design-system
-      '@tailwindcss/vite':
-        specifier: ^4.1.12
-        version: 4.1.13(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
-      lucide-react:
-        specifier: ^0.542.0
-        version: 0.542.0(react@19.1.1)
-      react:
-        specifier: ^19.1.1
-        version: 19.1.1
-      react-dom:
-        specifier: ^19.1.1
-        version: 19.1.1(react@19.1.1)
-    devDependencies:
-      '@chromatic-com/storybook':
-        specifier: ^4.1.1
-        version: 4.1.1(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))
-      '@eslint/js':
-        specifier: ^9.33.0
-        version: 9.35.0
-      '@react-skeleton/config':
-        specifier: workspace:*
-        version: link:../../packages/config
-      '@storybook/addon-a11y':
-        specifier: ^9.1.3
-        version: 9.1.5(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))
-      '@storybook/addon-docs':
-        specifier: ^9.1.3
-        version: 9.1.5(@types/react@19.1.12)(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))
-      '@storybook/addon-onboarding':
-        specifier: ^9.1.3
-        version: 9.1.5(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))
-      '@storybook/addon-vitest':
-        specifier: ^9.1.3
-        version: 9.1.5(@vitest/browser@3.2.4)(@vitest/runner@3.2.4)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))(vitest@3.2.4)
-      '@storybook/react-vite':
-        specifier: ^9.1.3
-        version: 9.1.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rollup@4.50.1)(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))(typescript@5.8.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
-      '@types/node':
-        specifier: ^24.3.0
-        version: 24.3.1
-      '@types/react':
-        specifier: ^19.1.10
-        version: 19.1.12
-      '@types/react-dom':
-        specifier: ^19.1.7
-        version: 19.1.9(@types/react@19.1.12)
-      '@vitejs/plugin-react':
-        specifier: ^5.0.0
-        version: 5.0.2(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
-      '@vitest/browser':
-        specifier: ^3.2.4
-        version: 3.2.4(playwright@1.55.0)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))(vitest@3.2.4)
-      '@vitest/coverage-v8':
-        specifier: ^3.2.4
-        version: 3.2.4(@vitest/browser@3.2.4)(vitest@3.2.4)
-      eslint:
-        specifier: ^9.33.0
-        version: 9.35.0(jiti@2.5.1)
-      eslint-plugin-react-hooks:
-        specifier: ^5.2.0
-        version: 5.2.0(eslint@9.35.0(jiti@2.5.1))
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.20
-        version: 0.4.20(eslint@9.35.0(jiti@2.5.1))
-      eslint-plugin-storybook:
-        specifier: ^9.1.3
-        version: 9.1.5(eslint@9.35.0(jiti@2.5.1))(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))(typescript@5.8.3)
-      globals:
-        specifier: ^16.3.0
-        version: 16.3.0
-      husky:
-        specifier: ^9.1.7
-        version: 9.1.7
-      playwright:
-        specifier: ^1.55.0
-        version: 1.55.0
-      prettier:
-        specifier: ^3.6.2
-        version: 3.6.2
-      storybook:
-        specifier: ^9.1.3
-        version: 9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
-      tailwindcss:
-        specifier: ^4.1.5
-        version: 4.1.13
-      tw-animate-css:
-        specifier: ^1.3.8
-        version: 1.3.8
-      typescript:
-        specifier: ~5.8.3
-        version: 5.8.3
-      typescript-eslint:
-        specifier: ^8.39.1
-        version: 8.42.0(eslint@9.35.0(jiti@2.5.1))(typescript@5.8.3)
-      vite:
-        specifier: ^7.1.5
-        version: 7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)
-      vitest:
-        specifier: ^3.2.4
-        version: 3.2.4(@types/node@24.3.1)(@vitest/browser@3.2.4)(jiti@2.5.1)(jsdom@26.1.0)(lightningcss@1.30.1)
-
   apps/web:
     dependencies:
       '@react-skeleton/design-system':
@@ -221,7 +115,7 @@ importers:
         version: 9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
       ts-jest:
         specifier: ^29.4.1
-        version: 29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@30.0.5)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@30.0.5)(jest@29.7.0)(typescript@5.8.3)
+        version: 29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@30.0.5)(babel-jest@29.7.0(@babel/core@7.28.4))(esbuild@0.25.9)(jest-util@30.0.5)(jest@29.7.0(@types/node@24.3.1))(typescript@5.8.3)
       tw-animate-css:
         specifier: ^1.3.8
         version: 1.3.8
@@ -300,7 +194,7 @@ importers:
         version: 4.1.13
       ts-jest:
         specifier: ^29.2.5
-        version: 29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@30.0.5)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@30.0.5)(jest@29.7.0)(typescript@5.8.3)
+        version: 29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@30.0.5)(babel-jest@29.7.0(@babel/core@7.28.4))(esbuild@0.25.9)(jest-util@30.0.5)(jest@29.7.0(@types/node@24.3.1))(typescript@5.8.3)
       tw-animate-css:
         specifier: ^1.3.8
         version: 1.3.8
@@ -359,6 +253,112 @@ importers:
       typescript:
         specifier: 5.9.2
         version: 5.9.2
+
+  packages/storybook-config:
+    dependencies:
+      '@react-skeleton/design-system':
+        specifier: workspace:*
+        version: link:../design-system
+      '@tailwindcss/vite':
+        specifier: ^4.1.12
+        version: 4.1.13(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
+      lucide-react:
+        specifier: ^0.542.0
+        version: 0.542.0(react@19.1.1)
+      react:
+        specifier: ^19.1.1
+        version: 19.1.1
+      react-dom:
+        specifier: ^19.1.1
+        version: 19.1.1(react@19.1.1)
+    devDependencies:
+      '@chromatic-com/storybook':
+        specifier: ^4.1.1
+        version: 4.1.1(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))
+      '@eslint/js':
+        specifier: ^9.33.0
+        version: 9.35.0
+      '@react-skeleton/config':
+        specifier: workspace:*
+        version: link:../config
+      '@storybook/addon-a11y':
+        specifier: ^9.1.3
+        version: 9.1.5(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))
+      '@storybook/addon-docs':
+        specifier: ^9.1.3
+        version: 9.1.5(@types/react@19.1.12)(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))
+      '@storybook/addon-onboarding':
+        specifier: ^9.1.3
+        version: 9.1.5(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))
+      '@storybook/addon-vitest':
+        specifier: ^9.1.3
+        version: 9.1.5(@vitest/browser@3.2.4)(@vitest/runner@3.2.4)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))(vitest@3.2.4)
+      '@storybook/react-vite':
+        specifier: ^9.1.3
+        version: 9.1.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rollup@4.50.1)(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))(typescript@5.8.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.1
+      '@types/react':
+        specifier: ^19.1.10
+        version: 19.1.12
+      '@types/react-dom':
+        specifier: ^19.1.7
+        version: 19.1.9(@types/react@19.1.12)
+      '@vitejs/plugin-react':
+        specifier: ^5.0.0
+        version: 5.0.2(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
+      '@vitest/browser':
+        specifier: ^3.2.4
+        version: 3.2.4(playwright@1.55.0)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))(vitest@3.2.4)
+      '@vitest/coverage-v8':
+        specifier: ^3.2.4
+        version: 3.2.4(@vitest/browser@3.2.4)(vitest@3.2.4)
+      eslint:
+        specifier: ^9.33.0
+        version: 9.35.0(jiti@2.5.1)
+      eslint-plugin-react-hooks:
+        specifier: ^5.2.0
+        version: 5.2.0(eslint@9.35.0(jiti@2.5.1))
+      eslint-plugin-react-refresh:
+        specifier: ^0.4.20
+        version: 0.4.20(eslint@9.35.0(jiti@2.5.1))
+      eslint-plugin-storybook:
+        specifier: ^9.1.3
+        version: 9.1.5(eslint@9.35.0(jiti@2.5.1))(storybook@9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)))(typescript@5.8.3)
+      globals:
+        specifier: ^16.3.0
+        version: 16.3.0
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
+      playwright:
+        specifier: ^1.55.0
+        version: 1.55.0
+      prettier:
+        specifier: ^3.6.2
+        version: 3.6.2
+      storybook:
+        specifier: ^9.1.3
+        version: 9.1.5(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
+      tailwindcss:
+        specifier: ^4.1.5
+        version: 4.1.13
+      tw-animate-css:
+        specifier: ^1.3.8
+        version: 1.3.8
+      typescript:
+        specifier: ~5.8.3
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.39.1
+        version: 8.42.0(eslint@9.35.0(jiti@2.5.1))(typescript@5.8.3)
+      vite:
+        specifier: ^7.1.5
+        version: 7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1)
+      vitest:
+        specifier: ^3.2.4
+        version: 3.2.4(@types/node@24.3.1)(@vitest/browser@3.2.4)(jiti@2.5.1)(jsdom@26.1.0)(lightningcss@1.30.1)
 
 packages:
 
@@ -8077,7 +8077,7 @@ snapshots:
 
   ts-dedent@2.2.0: {}
 
-  ts-jest@29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@30.0.5)(babel-jest@29.7.0(@babel/core@7.28.4))(jest-util@30.0.5)(jest@29.7.0)(typescript@5.8.3):
+  ts-jest@29.4.1(@babel/core@7.28.4)(@jest/transform@29.7.0)(@jest/types@30.0.5)(babel-jest@29.7.0(@babel/core@7.28.4))(esbuild@0.25.9)(jest-util@30.0.5)(jest@29.7.0(@types/node@24.3.1))(typescript@5.8.3):
     dependencies:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
@@ -8095,6 +8095,7 @@ snapshots:
       '@jest/transform': 29.7.0
       '@jest/types': 30.0.5
       babel-jest: 29.7.0(@babel/core@7.28.4)
+      esbuild: 0.25.9
       jest-util: 30.0.5
 
   tsconfig-paths@4.2.0:

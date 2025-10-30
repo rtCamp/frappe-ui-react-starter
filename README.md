@@ -6,7 +6,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 - It uses [vite](https://vite.dev/), a build tool that aims to provide a faster and leaner development experience for modern web projects.
 
 - The application lives in `apps/web` directory, where you can import components from the packages ui directory.
-- The storybook lives in `apps/docs-design-system` directory.
+- The storybook lives in `apps/storybook-config` directory.
 - Each of the configurations have been added in their separate package folder like `config-eslint`,
   `config-tailwind`, so that whichever package is needed can be imported inside `apps/web` app.
 

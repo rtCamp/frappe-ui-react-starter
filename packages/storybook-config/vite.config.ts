@@ -10,7 +10,7 @@ export default defineConfig({
 			// Ensure Tailwind scans the design-system package
 			content: [
 				'./src/**/*.{js,ts,jsx,tsx}',
-				'../../../packages/design-system/src/**/*.{js,ts,jsx,tsx}',
+				'../design-system/src/**/*.{js,ts,jsx,tsx}',
 			],
 		}),
 	],
