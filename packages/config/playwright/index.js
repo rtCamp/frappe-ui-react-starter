@@ -1,3 +1,6 @@
+/**
+ * External dependencies.
+ */
 // @ts-check
 import { defineConfig } from "@playwright/test";
 
