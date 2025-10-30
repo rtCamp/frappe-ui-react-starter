@@ -1,9 +1,4 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind v4 base styles - import this from your app's CSS with the Tailwind Vite plugin */
 
 @custom-variant dark (&:is(.dark *));
 

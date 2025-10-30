@@ -4,7 +4,16 @@ import tailwindcss from '@tailwindcss/vite';
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
-	plugins: [react(), tailwindcss()],
+	plugins: [
+		react(),
+		tailwindcss({
+			// Ensure Tailwind scans the design-system package
+			content: [
+				'./src/**/*.{js,ts,jsx,tsx}',
+				'../../../packages/design-system/src/**/*.{js,ts,jsx,tsx}',
+			],
+		}),
+	],
 	server: {
 		port: 5173,     // Force dev server to always use 5173.
 		strictPort: true, // Fail if 5173 is already taken.

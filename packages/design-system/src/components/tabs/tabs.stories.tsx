@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/addon-docs/blocks';
 
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '../tabs';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from './index';
 
 /**
  * A set of layered sections that allow navigation between different views.
