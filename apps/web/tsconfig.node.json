@@ -1,5 +1,5 @@
 {
-	"extends": "@react-skeleton/config-typescript/base.json",
+	"extends": "@react-skeleton/config/typescript/base",
 	"compilerOptions": {
 		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
 

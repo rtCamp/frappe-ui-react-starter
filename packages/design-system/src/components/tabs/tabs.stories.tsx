@@ -1,24 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/addon-docs/blocks';
 
-import {
-	Tabs,
-	TabsList,
-	TabsTrigger,
-	TabsContent,
-} from "../tabs";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '../tabs';
 
 /**
  * A set of layered sections that allow navigation between different views.
  */
 const meta = {
-	title: "ui/Tabs",
+	title: 'ui/Tabs',
 	component: Tabs,
-	tags: ["autodocs"],
+	tags: ['autodocs'],
 	parameters: {
-		layout: "centered",
+		layout: 'centered',
 	},
 	args: {
-		defaultValue: "account",
+		defaultValue: 'account',
 	},
 } satisfies Meta<typeof Tabs>;
 
@@ -36,8 +31,12 @@ export const Default: Story = {
 				<TabsTrigger value="account">Account</TabsTrigger>
 				<TabsTrigger value="password">Password</TabsTrigger>
 			</TabsList>
-			<TabsContent value="account">Account content goes here.</TabsContent>
-			<TabsContent value="password">Password content goes here.</TabsContent>
+			<TabsContent value="account">
+				Account content goes here.
+			</TabsContent>
+			<TabsContent value="password">
+				Password content goes here.
+			</TabsContent>
 		</Tabs>
 	),
 };
