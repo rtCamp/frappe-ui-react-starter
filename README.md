@@ -7,7 +7,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 - The application lives in `packages/app` directory, where you can import components from the packages ui directory.
 - The storybook lives in `packages/storybook-config` directory.
-- All configurations have been consolidated into a single `@react-skeleton/config` package with granular exports for easier maintenance and dependency management.
+- All configurations have been consolidated into a single `@react-skeleton/shared-config` package with granular exports for easier maintenance and dependency management.
 
 # Local Setup
 
@@ -41,13 +41,13 @@ import { Button } from '@react-skeleton/design-system/button';
 <Button variant="outline" size="sm">Open</Button>
 ```
 # Config Package
-- All tooling configurations (ESLint, Jest, Playwright, Prettier, TailwindCSS, TypeScript) are now in a unified `@react-skeleton/config` package.
+- All tooling configurations (ESLint, Jest, Playwright, Prettier, TailwindCSS, TypeScript) are now in a unified `@react-skeleton/shared-config` package.
 - Configuration can be imported using granular exports from the consolidated package.
 - Examples:
-  - ESLint: `import { config as baseConfig } from '@react-skeleton/config/eslint';`
-  - Prettier: `import defaultConfig from '@react-skeleton/config/prettier';`
-  - Jest: `import baseConfig from '@react-skeleton/config/jest/react';`
-  - TypeScript: `"extends": "@react-skeleton/config/typescript/base"`
-  - Tailwind: `@import "@react-skeleton/config/tailwind";`
+  - ESLint: `import { config as baseConfig } from '@react-skeleton/shared-config/eslint';`
+  - Prettier: `import defaultConfig from '@react-skeleton/shared-config/prettier';`
+  - Jest: `import baseConfig from '@react-skeleton/shared-config/jest/react';`
+  - TypeScript: `"extends": "@react-skeleton/shared-config/typescript/base"`
+  - Tailwind: `@import "@react-skeleton/shared-config/tailwind";`
 
 <a href="https://rtcamp.com/"><img src="https://rtcamp.com/wp-content/uploads/sites/2/2019/04/github-banner@2x.png" alt="Join us at rtCamp, we specialize in providing high performance enterprise WordPress solutions"></a>

@@ -1,4 +1,4 @@
-import baseConfig from '@react-skeleton/config/jest/react';
+import baseConfig from '@react-skeleton/shared-config/jest/react';
 
 /** @type {import('jest').Config} */
 const config = {

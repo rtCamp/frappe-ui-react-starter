@@ -1,5 +1,5 @@
 {
-	"extends": "@react-skeleton/config/typescript/react-library",
+	"extends": "@react-skeleton/shared-config/typescript/react-library",
 	"compilerOptions": {
 		"outDir": "./dist",
 		"lib": ["dom", "ES2015"],

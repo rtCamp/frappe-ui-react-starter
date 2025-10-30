@@ -1,4 +1,4 @@
-import baseConfig from '@react-skeleton/config/playwright';
+import baseConfig from '@react-skeleton/shared-config/playwright';
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({

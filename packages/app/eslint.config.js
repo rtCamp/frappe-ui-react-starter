@@ -4,7 +4,7 @@ import storybook from 'eslint-plugin-storybook';
 /**
  * Imports.
  */
-import { config as baseConfig } from '@react-skeleton/config/eslint';
+import { config as baseConfig } from '@react-skeleton/shared-config/eslint';
 import tseslint from 'typescript-eslint';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import { globalIgnores } from 'eslint/config';
