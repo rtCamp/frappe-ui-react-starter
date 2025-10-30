@@ -4,7 +4,7 @@ import baseConfig from '@react-skeleton/config/jest/react';
 const config = {
 	...baseConfig,
 	testEnvironment: 'jsdom',
-	displayName: 'web',
+	displayName: 'app',
 	rootDir: '.',
 	testMatch: ['<rootDir>/src/**/*.test.{ts,tsx}'],
 };

@@ -9,20 +9,19 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "lint": "pnpm --filter web lint",
-    "format": "pnpm --filter web format",
-    "dev": "pnpm --filter web dev",
-    "check-types": "pnpm --filter web check-types",
-    "build": "pnpm --filter web build",
-    "serve": "pnpm --filter web preview",
+    "lint": "pnpm --filter app lint",
+    "format": "pnpm --filter app format",
+    "dev": "pnpm --filter app dev",
+    "check-types": "pnpm --filter app check-types",
+    "build": "pnpm --filter app build",
+    "serve": "pnpm --filter app preview",
     "preview-storybook": "pnpm --filter storybook-config preview-storybook",
     "storybook": "pnpm --filter storybook-config storybook",
-    "test": "pnpm --filter web test",
-    "test:e2e": "pnpm --filter web test:e2e",
-    "test:e2e-ui": "pnpm --filter web test:e2e-ui"
+    "test": "pnpm --filter app test",
+    "test:e2e": "pnpm --filter app test:e2e",
+    "test:e2e-ui": "pnpm --filter app test:e2e-ui"
   },
   "workspaces": [
-    "apps/*",
     "packages/*"
   ]
 }
