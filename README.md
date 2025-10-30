@@ -6,9 +6,8 @@ This template provides a minimal setup to get React working in Vite with HMR and
 - It uses [vite](https://vite.dev/), a build tool that aims to provide a faster and leaner development experience for modern web projects.
 
 - The application lives in `apps/web` directory, where you can import components from the packages ui directory.
-- The storybook lives in `apps/storybook-config` directory.
-- Each of the configurations have been added in their separate package folder like `config-eslint`,
-  `config-tailwind`, so that whichever package is needed can be imported inside `apps/web` app.
+- The storybook lives in `apps/docs-design-system` directory.
+- All configurations have been consolidated into a single `@react-skeleton/config` package with granular exports for easier maintenance and dependency management.
 
 # Local Setup
 
@@ -41,9 +40,14 @@ import { Button } from '@react-skeleton/design-system/button';
 
 <Button variant="outline" size="sm">Open</Button>
 ```
-# Config Packages
-- Configuration packages like `apps/config-eslint`, `apps/config-prettier` can be imported from packages.
-- Example, you can import a `config-prettier` config inside the `apps/web/prettierrc.js` like so:
-  `import defaultConfig from '@react-skeleton/config-prettier';`
+# Config Package
+- All tooling configurations (ESLint, Jest, Playwright, Prettier, TailwindCSS, TypeScript) are now in a unified `@react-skeleton/config` package.
+- Configuration can be imported using granular exports from the consolidated package.
+- Examples:
+  - ESLint: `import { config as baseConfig } from '@react-skeleton/config/eslint';`
+  - Prettier: `import defaultConfig from '@react-skeleton/config/prettier';`
+  - Jest: `import baseConfig from '@react-skeleton/config/jest/react';`
+  - TypeScript: `"extends": "@react-skeleton/config/typescript/base"`
+  - Tailwind: `@import "@react-skeleton/config/tailwind";`
 
 <a href="https://rtcamp.com/"><img src="https://rtcamp.com/wp-content/uploads/sites/2/2019/04/github-banner@2x.png" alt="Join us at rtCamp, we specialize in providing high performance enterprise WordPress solutions"></a>

@@ -37,7 +37,6 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.5",
     "ts-jest": "^29.2.5",
-    "tw-animate-css": "^1.3.8",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.37.0",
     "@wordpress/prettier-config": "^4.6.0"

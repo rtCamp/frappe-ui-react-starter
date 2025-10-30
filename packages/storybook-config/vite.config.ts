@@ -15,7 +15,7 @@ export default defineConfig({
 		}),
 	],
 	server: {
-		port: 5173,     // Force dev server to always use 5173.
-		strictPort: true, // Fail if 5173 is already taken.
+		port: 6007,     // Use unique port to avoid conflict with docs-design-system (5173)
+		strictPort: true, // Fail if port is already taken.
 	},
 });
