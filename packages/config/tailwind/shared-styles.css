@@ -1,4 +1,4 @@
-/* Tailwind v4 base styles - import this from your app's CSS with the Tailwind Vite plugin */
+@import 'tailwindcss';
 
 @custom-variant dark (&:is(.dark *));
 
