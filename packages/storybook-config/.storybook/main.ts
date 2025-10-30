@@ -1,9 +1,11 @@
 import type { StorybookConfig } from '@storybook/react-vite'
+import { mergeConfig } from 'vite'
+import path from 'path'
 
 const config: StorybookConfig = {
     stories: [
 	    // Look for stories inside design-system components
-	    '../../../packages/design-system/src/components/**/*.stories.@(js|jsx|ts|tsx)',
+	    '../../design-system/src/components/**/*.stories.@(js|jsx|ts|tsx)',
     ],
     addons: [
         '@chromatic-com/storybook',
@@ -15,6 +17,15 @@ const config: StorybookConfig = {
     framework: {
         name: '@storybook/react-vite',
         options: {},
+    },
+    async viteFinal(config) {
+        return mergeConfig(config, {
+            resolve: {
+                alias: {
+                    '@react-skeleton/design-system': path.resolve(__dirname, '../../design-system/src'),
+                },
+            },
+        })
     },
 }
 export default config
