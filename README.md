@@ -6,14 +6,15 @@ This template provides a minimal setup to start frontend development of Frappe a
 - It uses [vite](https://vite.dev/), a build tool that aims to provide a faster and leaner development experience for modern web projects.
 
 ## Usage
-This template is designed to be cloned into an existing Frappe app.
-For example, if your app is named `inventory`, you can clone this template into your app's root directory using degit.
+This template is designed to be cloned into an existing Frappe app using degit.
 
-```
-cd apps/inventory
+```bash
 npx degit rtCamp/frappe-ui-react-starter frontend
+```
+
+```bash
 cd frontend
-pnpm install # Run nvm use to ensure you use the correct Node.js version.
+pnpm install # Use `nvm use` for correct node version.
 pnpm dev
 ```
 
