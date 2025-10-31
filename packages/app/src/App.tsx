@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import { Button } from '@react-skeleton/design-system/button';
+import { Button } from '@frappe-ui-react-starter/design-system/button';
 
 function App() {
 	const [count, setCount] = useState(0);

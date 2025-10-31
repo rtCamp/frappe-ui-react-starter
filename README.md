@@ -19,7 +19,7 @@ pnpm dev
 
 - The application lives in the `packages/app` directory, where you can import components from the packages UI directory.
 - The Storybook configuration lives in the `packages/storybook-config` directory for your components; however, stories live inside the components folder.
-- All configurations have been consolidated into a single `@react-skeleton/shared-config` package with granular exports for easier maintenance and dependency management.
+- All configurations have been consolidated into a single `@frappe-ui-react-starter/shared-config` package with granular exports for easier maintenance and dependency management.
 
 # Development
 - **Local Development:** To start your local environment, run `pnpm dev`.
@@ -39,16 +39,16 @@ pnpm dev
   component can then be imported inside `packages/app/src/App.tsx` by importing the UI package,
   e.g.:
  ```javascript
-import { Button } from '@react-skeleton/design-system/button';
+import { Button } from '@frappe-ui-react-starter/design-system/button';
 
 <Button variant="outline" size="sm">Open</Button>
 ```
 # Config Package
-- All tooling configurations (ESLint, Jest, Playwright, Prettier, TailwindCSS, TypeScript) are now in a unified `@react-skeleton/shared-config` package.
+- All tooling configurations (ESLint, Jest, Playwright, Prettier, TailwindCSS, TypeScript) are now in a unified `@frappe-ui-react-starter/shared-config` package.
 - Configurations can be imported using granular exports from the consolidated package.
 - Examples:
-  - ESLint: `import { config as baseConfig } from '@react-skeleton/shared-config/eslint';`
-  - Prettier: `import defaultConfig from '@react-skeleton/shared-config/prettier';`
-  - Jest: `import baseConfig from '@react-skeleton/shared-config/jest/react';`
-  - TypeScript: `"extends": "@react-skeleton/shared-config/typescript/base"`
-  - Tailwind: `@import "@react-skeleton/shared-config/tailwind";`
+  - ESLint: `import { config as baseConfig } from '@frappe-ui-react-starter/shared-config/eslint';`
+  - Prettier: `import defaultConfig from '@frappe-ui-react-starter/shared-config/prettier';`
+  - Jest: `import baseConfig from '@frappe-ui-react-starter/shared-config/jest/react';`
+  - TypeScript: `"extends": "@frappe-ui-react-starter/shared-config/typescript/base"`
+  - Tailwind: `@import "@frappe-ui-react-starter/shared-config/tailwind";`

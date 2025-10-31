@@ -1,5 +1,5 @@
 {
-	"extends": "@react-skeleton/shared-config/typescript/react-library",
+	"extends": "@frappe-ui-react-starter/shared-config/typescript/react-library",
 	"compilerOptions": {
 		"jsx": "react-jsx",
 		"esModuleInterop": true,

@@ -1,4 +1,4 @@
-import baseConfig from '@react-skeleton/shared-config/jest/react';
+import baseConfig from '@frappe-ui-react-starter/shared-config/jest/react';
 
 /** @type {import('jest').Config} */
 const config = {

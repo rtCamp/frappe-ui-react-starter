@@ -1,5 +1,5 @@
 {
-  "name": "@react-skeleton/shared-config",
+  "name": "@frappe-ui-react-starter/shared-config",
   "version": "0.0.0",
   "type": "module",
   "private": true,

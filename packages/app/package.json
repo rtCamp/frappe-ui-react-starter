@@ -1,5 +1,5 @@
 {
-	"name": "@react-skeleton/app",
+	"name": "@frappe-ui-react-starter/app",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -16,7 +16,7 @@
 		"test:e2e-ui": "playwright test --ui"
 	},
 	"dependencies": {
-		"@react-skeleton/design-system": "workspace:*",
+		"@frappe-ui-react-starter/design-system": "workspace:*",
 		"@tailwindcss/vite": "^4.1.12",
 		"react": "^19.1.1",
 		"react-dom": "^19.1.1"
@@ -25,7 +25,7 @@
 		"@chromatic-com/storybook": "^4.1.1",
 		"@eslint/js": "^9.33.0",
 		"@playwright/test": "^1.55.0",
-		"@react-skeleton/shared-config": "workspace:*",
+		"@frappe-ui-react-starter/shared-config": "workspace:*",
 		"@storybook/addon-a11y": "^9.1.3",
 		"@storybook/addon-docs": "^9.1.3",
 		"@storybook/addon-onboarding": "^9.1.3",

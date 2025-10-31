@@ -10,7 +10,7 @@ importers:
 
   packages/app:
     dependencies:
-      '@react-skeleton/design-system':
+      '@frappe-ui-react-starter/design-system':
         specifier: workspace:*
         version: link:../design-system
       '@tailwindcss/vite':
@@ -32,7 +32,7 @@ importers:
       '@playwright/test':
         specifier: ^1.55.0
         version: 1.55.0
-      '@react-skeleton/shared-config':
+      '@frappe-ui-react-starter/shared-config':
         specifier: workspace:*
         version: link:../shared-config
       '@storybook/addon-a11y':
@@ -153,7 +153,7 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1
     devDependencies:
-      '@react-skeleton/shared-config':
+      '@frappe-ui-react-starter/shared-config':
         specifier: workspace:*
         version: link:../shared-config
       '@tailwindcss/cli':
@@ -250,7 +250,7 @@ importers:
 
   packages/storybook-config:
     dependencies:
-      '@react-skeleton/design-system':
+      '@frappe-ui-react-starter/design-system':
         specifier: workspace:*
         version: link:../design-system
       '@tailwindcss/vite':
@@ -272,7 +272,7 @@ importers:
       '@eslint/js':
         specifier: ^9.33.0
         version: 9.35.0
-      '@react-skeleton/shared-config':
+      '@frappe-ui-react-starter/shared-config':
         specifier: workspace:*
         version: link:../shared-config
       '@storybook/addon-a11y':
