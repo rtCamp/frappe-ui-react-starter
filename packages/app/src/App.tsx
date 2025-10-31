@@ -1,10 +1,8 @@
-import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import { Button, Card, CardHeader, CardTitle, CardContent, Tabs, TabsList, TabsTrigger, TabsContent } from '@frappe-ui-react-starter/design-system';
+import { Card, CardHeader, CardTitle, CardContent, Tabs, TabsList, TabsTrigger, TabsContent } from '@frappe-ui-react-starter/design-system';
 
 function App() {
-	const [count, setCount] = useState(0);
 
 	return (
 		<main className="max-w-7xl m-auto min-h-screen flex flex-col items-center justify-center gap-8 p-8">
@@ -28,13 +26,8 @@ function App() {
 				</CardHeader>
 				<CardContent>
 					<div className="flex flex-col items-center gap-4">
-						<Button onClick={() => setCount((count) => count + 1)}>
-							Count is {count}
-						</Button>
+						
 						<div className="flex gap-2">
-							<Button variant="primary" size="sm">Primary</Button>
-							<Button variant="secondary" size="sm">Secondary</Button>
-							<Button variant="outline" size="sm">Outline</Button>
 						</div>
 					</div>
 				</CardContent>
