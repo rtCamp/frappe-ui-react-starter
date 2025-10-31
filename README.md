@@ -21,19 +21,10 @@ pnpm dev
 - The Storybook configuration lives in the `packages/storybook-config` directory for your components; however, stories live inside the components folder.
 - All configurations have been consolidated into a single `@react-skeleton/shared-config` package with granular exports for easier maintenance and dependency management.
 
-# Local Setup
-
-1. Clone this repository
-2. Run `nvm use` to ensure you are using the required Node.js version
-3. Run `pnpm install`
-
 # Development
 - **Local Development:** To start your local environment, run `pnpm dev`.
   This will run the dev command for all packages inside the packages directory, e.g., for the 'app' package.
-- **Specific package development:** To start the development environment for only a specific package, run `pnpm --filter <package-name> dev`.
-  So to start the development environment for packages/app, run `pnpm --filter app dev`.
-
-- **Storybook:** To start Storybook, run `pnpm storybook`.
+- **Storybook:** To start Storybook for your components, run `pnpm storybook`.
 - **Linting:** To lint, run `pnpm lint`.
 
 | Application | Command                     | URL                     |
