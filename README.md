@@ -1,12 +1,24 @@
-# React Skeleton
+# Frappe UI React Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup start frontend development of Frappe apps with React working in Vite.
 
 - This is a monorepo(aka multi-package repository) that uses [workspace](https://pnpm.io/workspaces).
 - It uses [vite](https://vite.dev/), a build tool that aims to provide a faster and leaner development experience for modern web projects.
 
+## Usage
+This template is designed to be cloned into an existing Frappe app.
+For example, if your app is named inventory, you can clone this template into your app's root directory using degit.
+
+```
+cd apps/inventory
+npx degit rtCamp/frappe-ui-react-starter frontend
+cd frontend
+pnpm install # Run nvm use to ensure you use the correct node version number.
+pnpm dev
+```
+
 - The application lives in `packages/app` directory, where you can import components from the packages ui directory.
-- The storybook lives in `packages/storybook-config` directory.
+- The storybook congiguration lives in `packages/storybook-config` directory for your components however stories live inside the components folder.
 - All configurations have been consolidated into a single `@react-skeleton/shared-config` package with granular exports for easier maintenance and dependency management.
 
 # Local Setup
@@ -26,9 +38,9 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 | Application | Command                     | URL                   |
 |-------------|-----------------------------|-----------------------|
-| Development | `pnpm dev`                  | http://localhost:5174/|
-| Production  | `pnpm build && pnpm serve`  | http://localhost:5175/|
-| Storybook   | `pnpm storybook`            | http://localhost:6006/|
+| Development | `pnpm dev`                  | http://localhost:5174/%7C
+| Production  | `pnpm build && pnpm serve`  | http://localhost:5175/%7C
+| Storybook   | `pnpm storybook`            | http://localhost:6006/%7C
 
 # Components/UI package.
 - The components live in `packages/design-system/src/components` directory.
@@ -49,5 +61,3 @@ import { Button } from '@react-skeleton/design-system/button';
   - Jest: `import baseConfig from '@react-skeleton/shared-config/jest/react';`
   - TypeScript: `"extends": "@react-skeleton/shared-config/typescript/base"`
   - Tailwind: `@import "@react-skeleton/shared-config/tailwind";`
-
-<a href="https://rtcamp.com/"><img src="https://rtcamp.com/wp-content/uploads/sites/2/2019/04/github-banner@2x.png" alt="Join us at rtCamp, we specialize in providing high performance enterprise WordPress solutions"></a>
