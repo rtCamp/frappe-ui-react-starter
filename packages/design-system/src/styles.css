@@ -1,1 +1,5 @@
-/* Component-level styles for the UI package */
+/* Minimal styles for the design system */
+
+.design-system-component {
+  box-sizing: border-box;
+}

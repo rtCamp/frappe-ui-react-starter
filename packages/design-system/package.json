@@ -31,16 +31,9 @@
 		"lint": "eslint src --max-warnings 0",
 		"format": "prettier . --write"
 	},
-	"dependencies": {
-		"@radix-ui/react-slot": "^1.2.3",
-		"@radix-ui/react-tabs": "^1.1.13",
-		"class-variance-authority": "^0.7.1",
-		"clsx": "^2.1.1",
-		"tailwind-merge": "^3.3.1"
-	},
+	"dependencies": {},
 	"peerDependencies": {
-		"react": "^19",
-		"lucide-react": "^0.379.0"
+		"react": "^19"
 	},
 	"devDependencies": {
 		"@frappe-ui-react-starter/shared-config": "workspace:*",

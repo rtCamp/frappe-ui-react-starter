@@ -1,120 +1,87 @@
-/**
- * External Dependencies.
- */
-import * as React from 'react';
-import * as TabsPrimitive from '@radix-ui/react-tabs';
-import { cva, type VariantProps } from 'class-variance-authority';
+import React, { createContext, useContext, useState } from 'react';
 
-/**
- * Internal Dependencies.
- */
-import { cn } from '../../lib/utils';
+interface TabsContextType {
+  activeTab: string;
+  setActiveTab: (value: string) => void;
+}
 
-/**
- * Variants for Tab Triggers.
- *
- * Base styles: Applied to all tab triggers (flexbox, spacing, font size, transitions, etc.).
- * Variants:
- * default – Standard look, with hover, focus, and active styles.
- * ghost – A lighter, more subtle version (underline when active, transparent background).
- * defaultVariants: If no variant is passed, it defaults to default.
- */
-const tabsTriggerVariants = cva(
-	'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all',
-	{
-		variants: {
-			variant: {
-				default:
-					'text-muted-foreground hover:text-foreground cursor-pointer ' +
-					'hover:bg-accent focus-visible:outline-none focus-visible:ring-2 ' +
-					'focus-visible:ring-ring focus-visible:ring-offset-2 ' +
-					'data-[state=active]:bg-background data-[state=active]:text-foreground ' +
-					'data-[state=active]:shadow-sm',
-				ghost:
-					'text-muted-foreground hover:text-foreground cursor-pointer ' +
-					'hover:bg-transparent focus-visible:outline-none focus-visible:ring-2 ' +
-					'focus-visible:ring-ring focus-visible:ring-offset-2 ' +
-					'data-[state=active]:text-foreground data-[state=active]:underline',
-			},
-		},
-		defaultVariants: {
-			variant: 'default',
-		},
-	}
-);
+const TabsContext = createContext<TabsContextType | null>(null);
 
-/**
- * Tabs.
- *
- * Container for the tabs.
- */
-const Tabs = TabsPrimitive.Root;
+interface TabsProps {
+  defaultValue: string;
+  children: React.ReactNode;
+  className?: string;
+}
 
-/**
- * Tabs List.
- *
- * Wraps Radix’s TabsPrimitive.List.
- * Radix's Primitives are low-level, accessible, and unstyled building blocks.
- * Adds styling: flex row, rounded background, muted text.
- * Uses forwardRef, so you can still pass refs if needed.
- * The ref won’t pass down automatically unless the component is wrapped in forwardRef.
- * So forwardRef allows us to forward the ref to the underlying Radix TabsPrimitive.List.
- */
-const TabsList = React.forwardRef<
-	React.ComponentRef<typeof TabsPrimitive.List>,
-	React.ComponentPropsWithoutRef<typeof TabsPrimitive.List>
->(({ className, ...props }, ref) => (
-	<TabsPrimitive.List
-		ref={ref}
-		className={cn(
-			'inline-flex h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground',
-			className
-		)}
-		{...props}
-	/>
-));
-TabsList.displayName = TabsPrimitive.List.displayName;
+export function Tabs({ defaultValue, children, className = '' }: TabsProps) {
+  const [activeTab, setActiveTab] = useState(defaultValue);
 
-/**
- * Tabs Trigger.
- *
- * Wraps Radix’s TabsPrimitive.Trigger.
- * Applies the variant styles from tabsTriggerVariants.
- * variant prop decides if it’s default or ghost.
- */
-const TabsTrigger = React.forwardRef<
-	React.ComponentRef<typeof TabsPrimitive.Trigger>,
-	React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger> &
-		VariantProps<typeof tabsTriggerVariants>
->(({ className, variant, ...props }, ref) => (
-	<TabsPrimitive.Trigger
-		ref={ref}
-		className={cn(tabsTriggerVariants({ variant }), className)}
-		{...props}
-	/>
-));
-TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
+  return (
+    <TabsContext.Provider value={{ activeTab, setActiveTab }}>
+      <div className={className}>
+        {children}
+      </div>
+    </TabsContext.Provider>
+  );
+}
 
-/**
- * Tabs Content.
- *
- * Wraps Radix’s TabsPrimitive.Content.
- * Adds padding, border, and background.
- * This is where the actual tab panel content goes.
- */
-const TabsContent = React.forwardRef<
-	React.ComponentRef<typeof TabsPrimitive.Content>,
-	React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>
->(({ className, ...props }, ref) => (
-	<TabsPrimitive.Content
-		ref={ref}
-		className={cn(
-			'mt-2 rounded-md border border-input bg-background p-4',
-			className
-		)}
-		{...props}
-	/>
-));
-TabsContent.displayName = TabsPrimitive.Content.displayName;
+interface TabsListProps {
+  children: React.ReactNode;
+  className?: string;
+}
 
-export { Tabs, TabsList, TabsTrigger, TabsContent };
+export function TabsList({ children, className = '' }: TabsListProps) {
+  return (
+    <div className={`inline-flex bg-gray-100 rounded-md p-1 ${className}`}>
+      {children}
+    </div>
+  );
+}
+
+interface TabsTriggerProps {
+  value: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+export function TabsTrigger({ value, children, className = '' }: TabsTriggerProps) {
+  const context = useContext(TabsContext);
+  if (!context) throw new Error('TabsTrigger must be used within Tabs');
+
+  const { activeTab, setActiveTab } = context;
+  const isActive = activeTab === value;
+
+  return (
+    <button
+      className={`px-3 py-1.5 text-sm font-medium rounded transition-colors ${
+        isActive 
+          ? 'bg-white text-gray-900 shadow-sm' 
+          : 'text-gray-600 hover:text-gray-900'
+      } ${className}`}
+      onClick={() => setActiveTab(value)}
+    >
+      {children}
+    </button>
+  );
+}
+
+interface TabsContentProps {
+  value: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+export function TabsContent({ value, children, className = '' }: TabsContentProps) {
+  const context = useContext(TabsContext);
+  if (!context) throw new Error('TabsContent must be used within Tabs');
+
+  const { activeTab } = context;
+  
+  if (activeTab !== value) return null;
+
+  return (
+    <div className={`mt-2 ${className}`}>
+      {children}
+    </div>
+  );
+}
