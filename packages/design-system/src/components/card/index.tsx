@@ -2,6 +2,7 @@
  * External dependencies.
  */
 import React from 'react';
+import { Button } from '@rtcamp/frappe-ui-react';
 
 interface CardProps {
   children: React.ReactNode;
@@ -51,6 +52,7 @@ export function CardContent({ children, className = '' }: CardContentProps) {
   return (
     <div className={`pt-0 ${className}`}>
       {children}
+      <Button>Test Button</Button>
     </div>
   );
 }

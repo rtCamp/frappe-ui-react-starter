@@ -1549,7 +1549,7 @@ packages:
     os: [win32]
 
   '@rtcamp/frappe-ui-react@1.0.0-beta.0':
-    resolution: {integrity: sha512-06us863Xz2U57BroWhgQGNY+VRgtsLxCaIyh+zs/3axfoS97BsH1fZsQdTHjRgnIV98voepIxDfmEWmLhFxU2Q==}
+    resolution: {integrity: sha512-9e0lP1gkj/W3Qld8bFZUxvjiJ/JMWRpRBUAmhT3rx3/MLhkiAR33JHcCblS4m5Hc5EP3CdMT91LpahmAAvaqGQ==}
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -5860,6 +5860,7 @@ snapshots:
       '@radix-ui/react-toast': 1.2.15(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@radix-ui/react-tooltip': 1.2.8(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@tailwindcss/vite': 4.1.13(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
+      clsx: 2.1.1
       dayjs: 1.11.19
       dompurify: 3.3.0
       echarts: 5.6.0
@@ -5875,6 +5876,7 @@ snapshots:
       react-dom: 19.1.1(react@19.1.1)
       react-grid-layout: 1.5.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       react-quill-new: 3.6.0(quill-delta@5.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      react-resizable: 3.0.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       styled-components: 6.1.19(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       tailwindcss: 4.1.13
     transitivePeerDependencies:
