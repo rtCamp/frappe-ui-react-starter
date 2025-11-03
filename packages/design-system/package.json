@@ -45,6 +45,6 @@
 		"typescript": "5.9.2"
 	},
 	"dependencies": {
-		"@rtcamp/frappe-ui-react": "1.0.0-beta.0"
+		"@rtcamp/frappe-ui-react": "1.0.0-beta.1"
 	}
 }
