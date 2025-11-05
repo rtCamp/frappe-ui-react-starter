@@ -1,12 +1,12 @@
 {
 	"extends": "@frappe-ui-react-starter/shared-config/typescript/react-library",
 	"compilerOptions": {
+    "jsx": "react",
 		"outDir": "./dist",
 		"lib": ["dom", "ES2015"],
 		"sourceMap": true,
 		"noEmit": false,
 		"allowImportingTsExtensions": false,
-		/* Path aliasing */
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["./src/*"]

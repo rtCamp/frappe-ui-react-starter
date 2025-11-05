@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import '@rtcamp/frappe-ui-react/theme';
 
 @custom-variant dark (&:is(.dark *));
 
