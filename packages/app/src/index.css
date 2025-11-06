@@ -1,3 +1,4 @@
 @import "@frappe-ui-react-starter/shared-config/tailwind";
 
 @source "../../../packages/design-system";
+@source "../../node_modules/.pnpm/@rtcamp+frappe-ui-react@1.0.0-beta.2_@types+react-dom@19.1.9_@types+react@19.1.12__@typ_f9b3d6bbe3fae54e1b8551d3493cd385/node_modules/@rtcamp/frappe-ui-react"

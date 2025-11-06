@@ -52,7 +52,7 @@ export function CardContent({ children, className = '' }: CardContentProps) {
   return (
     <div className={`pt-0 ${className}`}>
       {children}
-      <Button>Test Button</Button>
+      <Button variant='solid'>Test Button</Button>
     </div>
   );
 }
