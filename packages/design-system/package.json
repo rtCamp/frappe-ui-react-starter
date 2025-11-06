@@ -11,14 +11,10 @@
 	],
 	"exports": {
 		".": {
-			"import": "./src/index.ts",
-			"require": "./src/index.ts"
+			"import": "./dist/index.ts",
+			"require": "./dist/index.ts"
 		},
-		"./styles": "./src/styles.css",
-		"./*": {
-			"import": "./src/components/*/index.tsx",
-			"require": "./src/components/*/index.tsx"
-		}
+		"./styles": "./dist/styles.css"
 	},
 	"scripts": {
 		"build:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
@@ -27,7 +23,7 @@
 		"dev:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
 		"dev:components": "tsc --watch",
 		"dev": "concurrently pnpm run \"dev:styles\" \"pnpm run dev:components\"",
-		"build": "npm run build:styles & npm run build:components",
+		"build": "npm run build:styles & npm run build:components && cp ./src/styles.css ./dist/styles.css",
 		"lint": "eslint src --max-warnings 0",
 		"format": "prettier . --write"
 	},
