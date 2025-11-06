@@ -1,5 +1,7 @@
 /* Minimal styles for the design system */
 
+@import '@rtcamp/frappe-ui-react/theme.css';
+
 .design-system-component {
   box-sizing: border-box;
 }
