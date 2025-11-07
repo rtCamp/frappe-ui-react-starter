@@ -11,10 +11,10 @@
 	],
 	"exports": {
 		".": {
-			"import": "./dist/index.ts",
-			"require": "./dist/index.ts"
+			"import": "./src/index.ts",
+			"require": "./src/index.ts"
 		},
-		"./styles": "./dist/styles.css"
+		"./styles": "./src/styles.css"
 	},
 	"scripts": {
 		"build:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
