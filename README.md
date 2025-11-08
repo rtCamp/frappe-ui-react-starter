@@ -14,7 +14,9 @@ npx degit rtCamp/frappe-ui-react-starter frontend
 
 ```bash
 cd frontend
-pnpm install # Use `nvm use` for correct node version.
+# Use `nvm use` to set correct node version.
+# Use `npm install -g pnpm` if pnpm is not installed.
+pnpm install
 pnpm dev
 ```
 
