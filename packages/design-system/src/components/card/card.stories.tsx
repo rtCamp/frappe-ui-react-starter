@@ -1,4 +1,11 @@
+/**
+ * External dependencies.
+ */
 import type { Meta, StoryObj } from '@storybook/react-vite';
+
+/**
+ * Internal dependencies.
+ */
 import { Card, CardHeader, CardTitle, CardContent } from './index';
 
 const meta: Meta<typeof Card> = {
