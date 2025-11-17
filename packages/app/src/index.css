@@ -1,3 +1,8 @@
 @import "@frappe-ui-react-starter/shared-config/tailwind";
 
+/*
+* Tailwind reads the @source directive, follows the path you provide, scans the files inside that directory, 
+* and includes any classes it finds in the final build.
+* @see https://tailwindcss.com/docs/functions-and-directives#source-directive
+*/
 @source "../../../packages/design-system";
