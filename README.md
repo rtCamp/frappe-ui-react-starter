@@ -8,9 +8,32 @@ This template provides a minimal setup to start frontend development of Frappe a
 ## Usage
 This template is designed to be cloned into an existing Frappe app using degit.
 
+**Step 1:**
+
+Create your Frappe app
+
 ```bash
+bench new-app todo
+```
+
+
+**Step 2:**
+
+```bash
+cd apps/todo
 npx degit rtCamp/frappe-ui-react-starter frontend
 ```
+
+**Step 3:**
+
+`ignore_csrf` config
+
+```bash
+bench --site todo.test set-config ignore_csrf 1
+```
+
+
+**Step 4:**
 
 ```bash
 cd frontend
@@ -19,6 +42,8 @@ cd frontend
 pnpm install
 pnpm dev
 ```
+
+
 
 - The application lives in the `packages/app` directory, where you can import components from the packages UI directory.
 - The Storybook configuration lives in the `packages/storybook-config` directory for your components; however, stories live inside the components folder.
