@@ -8,9 +8,19 @@ const User = () => {
 	const { data, error, isLoading } = useFrappeGetDocList('User', {
 		fields: ['*'],
 	});
+
+	if ( error ) {
+		return <p>There was an error loading..</p>;
+	}
+
     if (isLoading) {
-        return <div>Loading...</div>;
+        return <p>Loading...</p>;
     }
+
+	if ( ! data || data.length === 0 ) {
+		return <p>No users found.</p>;
+	}
+
 	return (
 		<ListView
 			columns={[
