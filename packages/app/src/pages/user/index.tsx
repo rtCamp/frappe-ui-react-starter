@@ -4,6 +4,13 @@
 import { ListView, Avatar } from '@rtcamp/frappe-ui-react';
 import { useFrappeGetDocList } from 'frappe-react-sdk';
 
+interface RowType {
+	full_name: string
+	user_image: string
+	email: string
+	id: string
+}
+
 const User = () => {
 	const { data, error, isLoading } = useFrappeGetDocList('User', {
 		fields: ['*'],
@@ -28,8 +35,8 @@ const User = () => {
 					label: 'Full Name',
 					key: 'full_name',
 					width: 3,
-					getLabel: ({ row }) => row.full_name,
-					prefix: ({ row }) => (
+					getLabel: ({ row }: { row: RowType } ) => row.full_name,
+					prefix: ({ row }: { row: RowType }) => (
 						<Avatar
 							shape="circle"
 							image={row.user_image}
