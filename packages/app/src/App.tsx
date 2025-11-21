@@ -10,7 +10,7 @@ import {
 	TabsTrigger,
 	TabsContent,
 } from '@frappe-ui-react-starter/design-system';
-
+import User from './pages/user';
 function App() {
 	return (
 		<main className="max-w-7xl m-auto min-h-screen flex flex-col items-center justify-center gap-8 p-8">
@@ -68,6 +68,7 @@ function App() {
 					</p>
 				</TabsContent>
 			</Tabs>
+			<User />
 		</main>
 	);
 }

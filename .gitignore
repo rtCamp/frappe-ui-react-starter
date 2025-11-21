@@ -32,3 +32,6 @@ coverage/
 playwright-report/
 trace/
 test-results/
+.env.development
+.env.production
+.env
