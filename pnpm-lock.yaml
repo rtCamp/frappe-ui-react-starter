@@ -14,8 +14,8 @@ importers:
         specifier: workspace:*
         version: link:../design-system
       '@rtcamp/frappe-ui-react':
-        specifier: 1.0.0
-        version: 1.0.0(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(quill-delta@5.1.0)(quill@2.0.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
+        specifier: 1.0.1
+        version: 1.0.1(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(quill-delta@5.1.0)(quill@2.0.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
       '@tailwindcss/vite':
         specifier: ^4.1.12
         version: 4.1.13(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
@@ -135,8 +135,8 @@ importers:
   packages/design-system:
     dependencies:
       '@rtcamp/frappe-ui-react':
-        specifier: 1.0.0-beta.3
-        version: 1.0.0-beta.3(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(quill-delta@5.1.0)(quill@2.0.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
+        specifier: 1.0.1
+        version: 1.0.1(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(quill-delta@5.1.0)(quill@2.0.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
       react:
         specifier: ^19
         version: 19.1.1
@@ -172,8 +172,8 @@ importers:
   packages/shared-config:
     dependencies:
       '@rtcamp/frappe-ui-react':
-        specifier: 1.0.0-beta.3
-        version: 1.0.0-beta.3(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(quill-delta@5.1.0)(quill@2.0.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
+        specifier: 1.0.1
+        version: 1.0.1(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(quill-delta@5.1.0)(quill@2.0.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
       prettier:
         specifier: '>=3'
         version: 3.6.2
@@ -1560,11 +1560,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rtcamp/frappe-ui-react@1.0.0':
-    resolution: {integrity: sha512-AbwEZeWTiGompAzXjOT55ccj6zvL0IIr3kg2LNuGrSQK1AQ0x3ijDJjNEEXXdjJwS9lD9wxocd5eGCBJsBP7zA==}
-
-  '@rtcamp/frappe-ui-react@1.0.0-beta.3':
-    resolution: {integrity: sha512-2cbY3EV2pxC3vFGy+8zMWIXSeWN/HNYXkTGIIEnHkfVeEVVs3Q98TObvUFhOmdJh3V4Ijce3RlGR1WfmMUgamg==}
+  '@rtcamp/frappe-ui-react@1.0.1':
+    resolution: {integrity: sha512-z77B3FqGxQ1cuig3zbPQuvTTL28JOjKXXivJHl9YLeQFIMBFqKJwZtJzWwuLPPNQ3huYH3tCqlGOzmL47ofv8g==}
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -5990,43 +5987,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.50.1':
     optional: true
 
-  '@rtcamp/frappe-ui-react@1.0.0(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(quill-delta@5.1.0)(quill@2.0.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))':
-    dependencies:
-      '@floating-ui/react': 0.27.16(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@headlessui/react': 2.2.9(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@popperjs/core': 2.11.8
-      '@radix-ui/react-dialog': 1.1.15(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@radix-ui/react-dropdown-menu': 2.1.16(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@radix-ui/react-toast': 1.2.15(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@radix-ui/react-tooltip': 1.2.8(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@tailwindcss/vite': 4.1.13(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))
-      clsx: 2.1.1
-      dayjs: 1.11.19
-      dompurify: 3.3.0
-      echarts: 5.6.0
-      feather-icons: 4.29.2
-      lodash: 4.17.21
-      lodash-es: 4.17.21
-      lodash.clonedeep: 4.5.0
-      lodash.isequal: 4.5.0
-      lucide-react: 0.539.0(react@19.1.1)
-      quill-image-resize-module-react: 3.0.0
-      quill-paste-smart: 2.0.0(quill@2.0.3)
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
-      react-grid-layout: 1.5.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      react-quill-new: 3.6.0(quill-delta@5.1.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      react-resizable: 3.0.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      styled-components: 6.1.19(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      tailwindcss: 4.1.13
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
-      - quill
-      - quill-delta
-      - vite
-
-  '@rtcamp/frappe-ui-react@1.0.0-beta.3(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(quill-delta@5.1.0)(quill@2.0.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))':
+  '@rtcamp/frappe-ui-react@1.0.1(@types/react-dom@19.1.9(@types/react@19.1.12))(@types/react@19.1.12)(quill-delta@5.1.0)(quill@2.0.3)(vite@7.1.5(@types/node@24.3.1)(jiti@2.5.1)(lightningcss@1.30.1))':
     dependencies:
       '@floating-ui/react': 0.27.16(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@headlessui/react': 2.2.9(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
