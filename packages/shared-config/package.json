@@ -45,6 +45,6 @@
     "prettier": ">=3"
   },
   "dependencies": {
-    "@rtcamp/frappe-ui-react": "1.0.2"
+    "@rtcamp/frappe-ui-react": "1.0.3"
   }
 }
