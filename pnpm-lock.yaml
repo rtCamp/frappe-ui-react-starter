@@ -17,7 +17,7 @@ importers:
         specifier: workspace:*
         version: link:../design-system
       '@rtcamp/frappe-ui-react':
-        specifier: ^1.1.0
+        specifier: 1.1.0
         version: 1.1.0(@floating-ui/dom@1.7.5)(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/extension-code-block@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@tiptap/extensions@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(highlight.js@11.11.1)
       '@tailwindcss/vite':
         specifier: ^4.1.12
@@ -138,7 +138,7 @@ importers:
   packages/design-system:
     dependencies:
       '@rtcamp/frappe-ui-react':
-        specifier: ^1.1.0
+        specifier: 1.1.0
         version: 1.1.0(@floating-ui/dom@1.7.5)(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/extension-code-block@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@tiptap/extensions@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(highlight.js@11.11.1)
       react:
         specifier: ^19.1.1 || ^19.2.3
@@ -175,7 +175,7 @@ importers:
   packages/shared-config:
     dependencies:
       '@rtcamp/frappe-ui-react':
-        specifier: ^1.1.0
+        specifier: 1.1.0
         version: 1.1.0(@floating-ui/dom@1.7.5)(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/extension-code-block@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@tiptap/extensions@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(highlight.js@11.11.1)
       prettier:
         specifier: '>=3'
