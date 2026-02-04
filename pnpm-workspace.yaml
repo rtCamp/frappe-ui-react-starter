@@ -8,3 +8,6 @@ onlyBuiltDependencies:
   - '@parcel/watcher'
   - '@tailwindcss/oxide'
   - esbuild
+
+overrides:
+  '@isaacs/brace-expansion@<=5.0.0': '>=5.0.1'
